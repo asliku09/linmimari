@@ -1,4 +1,4 @@
-/* CSS KODU 1 */
+/* CSS KODU 2 - İDEAL VERSİYON */
 
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -9,27 +9,27 @@ body {
 
 /* HEADER */
 header {
-    padding: 20px 20px;
+    padding: 25px 20px 15px;
     text-align: center;
     background: white;
 }
 
 /* LOGO */
 .logo {
-    height: 120px;
-    margin-bottom: 10px;
+    height: 110px;
+    margin-bottom: 5px;
 }
 
-/* SAYFA BAŞLIĞI (Projeler vs) */
+/* SAYFA BAŞLIĞI */
 h1 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
-    margin: 10px 0;
+    margin: 5px 0 10px;
 }
 
 /* NAV */
 nav {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 nav a {
@@ -39,21 +39,12 @@ nav a {
     font-size: 15px;
 }
 
-/* ALT BAŞLIK (Seçili Projeler) */
-h2 {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    color: #666;
-    margin-top: 20px;
-}
-
 /* PROJECT GRID */
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 40px;
+    gap: 35px;
+    padding: 50px 40px;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -88,7 +79,7 @@ h2 {
 
 /* PROJECT TEXT */
 .project-item p {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 14px;
     color: #666;
 }
@@ -105,7 +96,7 @@ h2 {
 @media (max-width: 768px) {
 
     .logo {
-        height: 90px;
+        height: 85px;
     }
 
     h1 {
@@ -114,21 +105,17 @@ h2 {
 
     nav a {
         display: inline-block;
-        margin: 5px 8px;
-        font-size: 14px;
-    }
-
-    h2 {
+        margin: 6px 8px;
         font-size: 14px;
     }
 
     .projects {
         grid-template-columns: 1fr;
         padding: 20px;
-        gap: 20px;
+        gap: 25px;
     }
 
     .project-item p {
-        font-size: 15px;   /* mobilde daha okunur */
+        font-size: 15px;
     }
 }
