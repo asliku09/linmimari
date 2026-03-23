@@ -119,3 +119,51 @@ nav a {
         font-size: 15px;
     }
 }
+
+/* MOBİL (tablet dahil) */
+@media (max-width: 768px) {
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .image-box {
+        aspect-ratio: 3 / 2;
+    }
+
+    .logo {
+        height: 90px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+        margin: 5px 8px;
+    }
+
+    .project-item p {
+        font-size: 12px;
+    }
+}
+
+
+/* KÜÇÜK TELEFON */
+@media (max-width: 480px) {
+
+    .projects {
+        grid-template-columns: 1fr;  /* tek kolon */
+    }
+
+    .image-box {
+        aspect-ratio: 16 / 10;
+    }
+
+    .logo {
+        height: 75px;
+    }
+}
