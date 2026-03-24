@@ -157,3 +157,16 @@ nav {
 nav a {
     display: inline-block;
 }
+
+/* SERVICES LIST */
+.services {
+    max-width: 700px;
+    margin: 20px auto;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.services li {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
