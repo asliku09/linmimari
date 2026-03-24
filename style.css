@@ -116,3 +116,23 @@ nav a.active::after {
     height: auto;
     display: block;
 }
+
+/* ANA SAYFA ORTALAMA */
+
+.hero,
+.intro,
+.services,
+.process {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 8px 0;
+}
