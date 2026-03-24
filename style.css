@@ -90,3 +90,18 @@ nav a.active::after {
 .image-box:hover img {
     transform: scale(1.05);
 }
+
+/* HAKKIMDA METİN DÜZENİ */
+
+.about {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 22px;
+    line-height: 1.7;
+    color: #444;
+}
