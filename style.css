@@ -170,3 +170,12 @@ nav a {
     margin-bottom: 10px;
     font-size: 22px;
 }
+
+/* METİN ALTI GÖRSEL */
+.content-image {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+}
