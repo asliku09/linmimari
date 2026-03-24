@@ -75,57 +75,6 @@ nav a.active {
     transform: scale(1.05);
 }
 
-/* YAZI */
-.project-item p {
-    margin-top: 14px;
-    font-size: 25px;  /* 🔥 büyüttük */
-    color: #444;
-}
-
-/* ---------------- */
-/* 📱 TABLET */
-/* ---------------- */
-@media (max-width: 900px) {
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 30px;
-        gap: 20px;
-    }
-}
-
-/* ---------------- */
-/* 📱 TELEFON */
-/* ---------------- */
-@media (max-width: 600px) {
-    .projects {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
-    .logo {
-        height: 130px;
-    }
-
-    nav a {
-        font-size: 18px;
-    }
-
-    .section-title {
-        font-size: 25px;
-    }
-
-    .project-item p {
-        font-size: 25px;
-    }
-}
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #666;
-    font-size: 15px;
-    position: relative;
-
-}
 
 nav a {
     margin: 0 15px;
