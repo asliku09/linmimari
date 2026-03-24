@@ -26,13 +26,20 @@ nav a {
     font-size: 15px;
 }
 
-/* AKTİF SAYFA */
 nav a.active {
     color: black;
     font-weight: 500;
 }
 
-/* PROJECT GRID */
+/* BAŞLIK */
+.section-title {
+    text-align: center;
+    margin: 40px 0 10px;
+    font-size: 24px;   /* 🔥 büyüttük */
+    font-weight: 500;
+}
+
+/* GRID */
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -42,7 +49,7 @@ nav a.active {
     margin: 0 auto;
 }
 
-/* PROJECT ITEM */
+/* ITEM */
 .project-item {
     text-align: center;
 }
@@ -50,9 +57,9 @@ nav a.active {
 /* GÖRSEL */
 .image-box {
     width: 100%;
-    aspect-ratio: 3 / 2.4; /* 🔥 daha dikey */
+    aspect-ratio: 3 / 2.3; /* 🔥 daha dikey */
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 8px;
     background: #eee;
 }
 
@@ -71,14 +78,13 @@ nav a.active {
 /* YAZI */
 .project-item p {
     margin-top: 14px;
-    font-size: 15px; /* 🔥 büyüttük */
-    color: #555;
+    font-size: 16px;  /* 🔥 büyüttük */
+    color: #444;
 }
 
 /* ---------------- */
-/* 📱 MOBİL */
+/* 📱 TABLET */
 /* ---------------- */
-
 @media (max-width: 900px) {
     .projects {
         grid-template-columns: repeat(2, 1fr);
@@ -87,9 +93,12 @@ nav a.active {
     }
 }
 
-@media (max-width: 500px) {
+/* ---------------- */
+/* 📱 TELEFON */
+/* ---------------- */
+@media (max-width: 600px) {
     .projects {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important; /* 🔥 garanti */
         padding: 20px;
     }
 
@@ -101,7 +110,11 @@ nav a.active {
         font-size: 14px;
     }
 
+    .section-title {
+        font-size: 22px;
+    }
+
     .project-item p {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
