@@ -118,3 +118,26 @@ nav a.active {
         font-size: 15px;
     }
 }
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+    position: relative;
+}
+
+/* aktif link */
+nav a.active {
+    color: black;
+}
+
+/* alt çizgi efekti */
+nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
