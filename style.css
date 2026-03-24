@@ -155,3 +155,25 @@ body.home .about {
         margin: 0 6px;
     }
 }
+
+/* İLETİŞİM SAYFASI */
+
+.contact {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+/* başlık varsa */
+.contact h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
