@@ -267,3 +267,22 @@ footer p {
 .hero-btn:hover {
     background: #ddd;
 }
+@media (max-width: 600px) {
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-text {
+        left: 5%;
+        right: 5%;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
