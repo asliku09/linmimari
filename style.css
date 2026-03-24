@@ -32,7 +32,7 @@ nav a {
     margin: 0 10px;
     text-decoration: none;
     color: #666;
-    font-size: 16px; /* 🔥 TÜM SAYFALARDA EŞİT */
+    font-size: 16px;
     position: relative;
 }
 
@@ -57,42 +57,39 @@ nav a.active::after {
 .section-title {
     text-align: center;
     margin: 40px 0 20px;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 500;
 }
 
-/* ANA SAYFA BLOK */
-.hero,
-.intro,
-.services,
-.process {
+/* ORTAK İÇERİK BLOĞU */
+.about {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 60px auto;
     padding: 0 20px;
+    text-align: center;
 }
 
-/* 🔥 TÜM METİNLER AYNI (HAKKIMDA İLE EŞİT) */
-.hero p,
-.intro p,
-.process p {
-    font-size: 18px;
+/* 🔥 TÜM METİNLER (ANASAYFA + HAKKIMDA AYNI) */
+.about p {
+    font-size: 22px;
     line-height: 1.7;
     color: #444;
 }
 
-/* SERVICES */
-.services {
+/* ANASAYFA SOL HİZALI */
+body.home .about {
     text-align: left;
-    margin-top: 20px;
 }
 
-.services ul {
-    padding-left: 18px;
+/* SERVICES */
+.about ul {
+    padding-left: 20px;
+    text-align: left;
 }
 
-.services li {
-    font-size: 18px;
-    margin-bottom: 8px;
+.about li {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
 /* PROJECT GRID */
@@ -134,20 +131,7 @@ nav a.active::after {
     transform: scale(1.05);
 }
 
-/* HAKKIMDA */
-.about {
-    max-width: 700px;
-    margin: 60px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.about p {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #444;
-}
-
+/* HAKKIMDA GÖRSEL */
 .about-image img {
     width: 100%;
     height: auto;
