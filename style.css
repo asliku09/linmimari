@@ -59,7 +59,7 @@ nav a.active {
     width: 100%;
     aspect-ratio: 3 / 2.3; /* 🔥 daha dikey */
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 15px;
     background: #eee;
 }
 
