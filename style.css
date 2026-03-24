@@ -124,11 +124,6 @@ nav a {
     color: #666;
     font-size: 15px;
     position: relative;
-}
-
-/* aktif link */
-nav a.active {
-    color: black;
 
 }
 
