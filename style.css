@@ -136,3 +136,12 @@ nav a.active::after {
 .services li {
     margin: 8px 0;
 }
+
+/* ANA SAYFA METİN BOYUTU */
+
+.hero p,
+.intro p,
+.services li,
+.process p {
+    font-size: 22px;
+}
