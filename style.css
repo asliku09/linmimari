@@ -1,5 +1,3 @@
-/* CSS KODU 2 - İDEAL VERSİYON */
-
 body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 0;
@@ -9,43 +7,38 @@ body {
 
 /* HEADER */
 header {
-    padding: 25px 20px 15px;
+    padding: 25px 20px;
     text-align: center;
     background: white;
 }
 
 /* LOGO */
 .logo {
-    height: 110px;
-    margin-bottom: 5px;
-}
-
-/* SAYFA BAŞLIĞI */
-h1 {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 5px 0 10px;
+    height: 120px;
+    margin-bottom: 15px;
 }
 
 /* NAV */
-nav {
-    margin-top: 5px;
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
 }
 
-nav a {
-    margin: 0 12px;
-    text-decoration: none;
-    color: #444;
-    font-size: 15px;
+/* AKTİF SAYFA */
+nav a.active {
+    color: black;
+    font-weight: 500;
 }
 
 /* PROJECT GRID */
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-    padding: 50px 40px;
-    max-width: 1100px;
+    gap: 40px;
+    padding: 60px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -54,16 +47,15 @@ nav a {
     text-align: center;
 }
 
-/* IMAGE BOX */
+/* GÖRSEL */
 .image-box {
     width: 100%;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: 3 / 2.4; /* 🔥 daha dikey */
     overflow: hidden;
-    background: #eee;
     border-radius: 6px;
+    background: #eee;
 }
 
-/* IMAGE */
 .image-box img {
     width: 100%;
     height: 100%;
@@ -72,98 +64,44 @@ nav a {
     transition: 0.3s;
 }
 
-/* HOVER */
 .image-box:hover img {
     transform: scale(1.05);
 }
 
-/* PROJECT TEXT */
+/* YAZI */
 .project-item p {
-    margin-top: 12px;
-    font-size: 14px;
-    color: #666;
+    margin-top: 14px;
+    font-size: 15px; /* 🔥 büyüttük */
+    color: #555;
 }
 
-/* ABOUT + CONTACT */
-.about, .contact {
-    padding: 50px 20px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
+/* ---------------- */
 /* 📱 MOBİL */
-@media (max-width: 768px) {
+/* ---------------- */
 
-    .logo {
-        height: 85px;
+@media (max-width: 900px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+        gap: 20px;
     }
+}
 
-    h1 {
-        font-size: 18px;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 6px 8px;
-        font-size: 14px;
-    }
-
+@media (max-width: 500px) {
     .projects {
         grid-template-columns: 1fr;
         padding: 20px;
-        gap: 25px;
-    }
-
-    .project-item p {
-        font-size: 15px;
-    }
-}
-
-/* MOBİL (tablet dahil) */
-@media (max-width: 768px) {
-
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .image-box {
-        aspect-ratio: 3 / 2;
     }
 
     .logo {
         height: 90px;
     }
 
-    header {
-        padding: 20px 10px;
-    }
-
     nav a {
-        font-size: 13px;
-        margin: 5px 8px;
+        font-size: 14px;
     }
 
     .project-item p {
-        font-size: 12px;
-    }
-}
-
-
-/* KÜÇÜK TELEFON */
-@media (max-width: 480px) {
-
-    .projects {
-        grid-template-columns: 1fr;  /* tek kolon */
-    }
-
-    .image-box {
-        aspect-ratio: 16 / 10;
-    }
-
-    .logo {
-        height: 75px;
+        font-size: 14px;
     }
 }
