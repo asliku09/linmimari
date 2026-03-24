@@ -177,3 +177,26 @@ body.home .about {
     font-size: 26px;
     margin-bottom: 25px;
 }
+/* MOBİLDE FONT SABİTLEME */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+/* TÜM SAYFALAR İÇİN AYNI BOYUT */
+.about p,
+.about li {
+    font-size: 22px;
+}
+
+/* MOBİL DENGELEME */
+@media (max-width: 600px) {
+
+    .about p,
+    .about li {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+}
