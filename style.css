@@ -14,7 +14,7 @@ header {
 
 /* LOGO */
 .logo {
-    height: 120px;
+    height: 160px;
     margin-bottom: 15px;
 }
 
@@ -23,7 +23,7 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     color: #666;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 nav a.active {
@@ -35,7 +35,7 @@ nav a.active {
 .section-title {
     text-align: center;
     margin: 40px 0 10px;
-    font-size: 24px;   /* 🔥 büyüttük */
+    font-size: 25px;   /* 🔥 büyüttük */
     font-weight: 500;
 }
 
@@ -103,15 +103,15 @@ nav a.active {
     }
 
     .logo {
-        height: 90px;
+        height: 130px;
     }
 
     nav a {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .section-title {
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .project-item p {
