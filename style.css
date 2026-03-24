@@ -3,6 +3,7 @@ body {
     margin: 0;
     background: #f5f5f5;
     color: #222;
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -19,11 +20,19 @@ header {
 }
 
 /* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
+
 nav a {
-    margin: 0 15px;
+    margin: 0 10px;
     text-decoration: none;
     color: #666;
-    font-size: 20px;
+    font-size: 16px; /* 🔥 TÜM SAYFALARDA EŞİT */
     position: relative;
 }
 
@@ -33,7 +42,7 @@ nav a.active {
     font-weight: 500;
 }
 
-/* alt çizgi efekti */
+/* alt çizgi */
 nav a.active::after {
     content: "";
     position: absolute;
@@ -47,12 +56,46 @@ nav a.active::after {
 /* BAŞLIK */
 .section-title {
     text-align: center;
-    margin: 40px 0 10px;
-    font-size: 25px;
+    margin: 40px 0 20px;
+    font-size: 24px;
     font-weight: 500;
 }
 
-/* GRID */
+/* ANA SAYFA BLOK */
+.hero,
+.intro,
+.services,
+.process {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 🔥 TÜM METİNLER AYNI (HAKKIMDA İLE EŞİT) */
+.hero p,
+.intro p,
+.process p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* SERVICES */
+.services {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.services ul {
+    padding-left: 18px;
+}
+
+.services li {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+/* PROJECT GRID */
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -62,15 +105,15 @@ nav a.active::after {
     margin: 0 auto;
 }
 
-/* ITEM */
+/* PROJECT TEXT */
 .project-item {
     text-align: center;
     margin-top: 12px;
-    font-size: 22px; 
+    font-size: 18px;
     color: #444;
 }
 
-/* GÖRSEL */
+/* IMAGE */
 .image-box {
     width: 100%;
     aspect-ratio: 3 / 1.8;
@@ -91,8 +134,7 @@ nav a.active::after {
     transform: scale(1.05);
 }
 
-/* HAKKIMDA METİN DÜZENİ */
-
+/* HAKKIMDA */
 .about {
     max-width: 700px;
     margin: 60px auto;
@@ -101,74 +143,15 @@ nav a.active::after {
 }
 
 .about p {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.7;
     color: #444;
-}
-
-.about-image {
-    width: 100%;
-    max-width: 100%;
 }
 
 .about-image img {
     width: 100%;
     height: auto;
     display: block;
-}
-
-/* ANA SAYFA ORTALAMA */
-
-.hero,
-.intro,
-.services,
-.process {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.services ul {
-    list-style: none;
-    padding: 0;
-}
-
-.services li {
-    margin: 8px 0;
-}
-
-/* ANA SAYFA METİN BOYUTU */
-
-.hero p,
-.intro p,
-.services li,
-.process p {
-    font-size: 22px;
-}
-
-/* NAV FIX */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap; /* 🔥 kırılmayı engeller */
-}
-
-nav a {
-    display: inline-block;
-}
-
-/* SERVICES LIST */
-.services {
-    max-width: 700px;
-    margin: 20px auto;
-    padding-left: 20px;
-    text-align: left;
-}
-
-.services li {
-    margin-bottom: 10px;
-    font-size: 22px;
 }
 
 /* METİN ALTI GÖRSEL */
@@ -180,14 +163,10 @@ nav a {
     border-radius: 10px;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    flex-wrap: nowrap; /* 🔥 asla alt satıra geçmez */
-}
-
-body {
-    overflow-x: hidden;
+/* MOBİL NAV */
+@media (max-width: 600px) {
+    nav a {
+        font-size: 13px;
+        margin: 0 6px;
+    }
 }
