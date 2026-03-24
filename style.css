@@ -73,7 +73,7 @@ nav a.active::after {
 /* GÖRSEL */
 .image-box {
     width: 100%;
-    aspect-ratio: 3 / 2.3;
+    aspect-ratio: 3 / 1.8;
     overflow: hidden;
     border-radius: 15px;
     background: #eee;
