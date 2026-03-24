@@ -20,10 +20,10 @@ header {
 
 /* NAV */
 nav a {
-    margin: 0 20px;
+    margin: 0 15px;
     text-decoration: none;
     color: #666;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
 }
 
@@ -49,4 +49,41 @@ nav a.active::after {
     text-align: center;
     margin: 40px 0 10px;
     font-size: 25px;
-    font
+    font-weight: 500;
+}
+
+/* GRID */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ITEM */
+.project-item {
+    text-align: center;
+}
+
+/* GÖRSEL */
+.image-box {
+    width: 100%;
+    aspect-ratio: 3 / 2.3;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #eee;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: 0.3s;
+}
+
+.image-box:hover img {
+    transform: scale(1.05);
+}
