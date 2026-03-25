@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>İletişim</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim — Lin Mimari</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-<img src="images/lin2.png" class="logo">
+  <header class="header">
+    <a href="index.html"><img src="images/lin22.png" alt="Lin Mimari" class="logo"></a>
+    <nav class="nav">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="hakkimda.html">Hakkımda</a>
+      <a href="iletisim.html" class="active">İletişim</a>
+    </nav>
+    <button class="hamburger" aria-label="Menü">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
 
-<nav>
-<a href="index.html">Ana Sayfa</a>
-<a href="projeler.html">Projeler</a>
-<a href="hakkimda.html">Hakkımda</a>
-<a href="iletisim.html" class="active">İletişim</a>
-</nav>
-</header>
+  <main>
+    <div class="contact-section">
+      <h2>İletişim</h2>
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+        <span>Email</span>
+        <a href="mailto:info@linmimari.com">info@linmimari.com</a>
+      </div>
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <span>Instagram</span>
+        <a href="https://www.instagram.com/linmimari" target="_blank" rel="noopener">@linmimari</a>
+      </div>
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.86 19.86 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.81.36 1.6.68 2.34a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.74.32 1.53.55 2.34.68a2 2 0 011.72 2.05z"/></svg>
+        <span>Telefon</span>
+        <a href="tel:+905323881072">0532 388 10 72</a>
+      </div>
+      <div class="contact-item">
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Adres</span>
+        <p>İstiklal Cad. No:50 K:5 Beyoğlu/İSTANBUL</p>
+      </div>
+    </div>
+  </main>
 
-<section class="contact">
-    <h2>İletişim</h2>
+  <footer class="footer">
+    <p>&copy; Lin Mimari</p>
+  </footer>
 
-    <p>Email: info@linmimari.com</p>
-    <p>WhatsApp: 0532 388 10 72</p>
-</section>
-<footer>
-        <p>© Linmimari</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

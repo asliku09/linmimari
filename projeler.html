@@ -1,157 +1,186 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>Linmimari</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeler — Lin Mimari</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-<img src="images/lin2.png" class="logo">
+  <header class="header">
+    <a href="index.html"><img src="images/lin22.png" alt="Lin Mimari" class="logo"></a>
+    <nav class="nav">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="projeler.html" class="active">Projeler</a>
+      <a href="hakkimda.html">Hakkımda</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+    <button class="hamburger" aria-label="Menü">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
 
-<nav>
-<a href="index.html">Ana Sayfa</a>
-<a href="projeler.html" class="active">Projeler</a>
-<a href="hakkimda.html">Hakkımda</a>
-<a href="iletisim.html">İletişim</a>
-</nav>
-</header>
+  <main>
+    <div class="page-header">
+      <h1>Seçili Projeler</h1>
+    </div>
 
-<h2 class="section-title">Seçili Projeler</h2>
+    <div class="projects-wrap">
 
-<section class="projects">
+      <div class="project-category">
+        <h2 class="project-category__title">Salon Tasarımı</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/salon2.jpg" alt="Salon Tasarımı">
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/salon3.jpg" alt="Salon Tasarımı">
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/salon2.jpg">
-  </div>
-  <p>Salon Tasarımı</p>
-</div>
+      <div class="project-category">
+        <h2 class="project-category__title">Hol Tasarımı</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/hol1.jpg" alt="Hol Tasarımı">
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/hol2.jpg" alt="Hol Tasarımı">
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/salon3.jpg">
-  </div>
-  <p>Salon Tasarımı</p>
-</div>
+      <div class="project-category">
+        <h2 class="project-category__title">Antre Tasarımı</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/antre1.jpg" alt="Antre Tasarımı">
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/hol1.jpg">
-  </div>
-  <p>Hol Tasarımı</p>
-</div>
+      <div class="project-category">
+        <h2 class="project-category__title">Mutfak Tasarımı</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/mutfak1.jpg" alt="Mutfak Tasarımı">
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/hol2.jpg">
-  </div>
-  <p>Hol Tasarımı</p>
-</div>
-  
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/antre1.jpg">
-  </div>
-  <p>Antre Tasarımı</p>
-</div>
+      <div class="project-category">
+        <h2 class="project-category__title">Yatak Odası</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/yatako1.jpg" alt="Yatak Odası">
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/yatako2.jpg" alt="Yatak Odası">
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/yatako3.jpg" alt="Yatak Odası">
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/yatako4.jpg" alt="Yatak Odası">
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/yatako5.jpg" alt="Yatak Odası">
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/yatako6.jpg" alt="Yatak Odası">
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/mutfak1.jpg">
-  </div>
-  <p>Mutfak Tasarımı</p>
-</div>
+      <div class="project-category">
+        <h2 class="project-category__title">Banyo</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/banyo1.jpg" alt="Banyo">
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/banyo2.jpg" alt="Banyo">
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/yatako1.jpg">
-  </div>
-  <p>Yatak Odası</p>
-</div>
+      <div class="project-category">
+        <h2 class="project-category__title">Okul Atölye</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/okulatolye1.jpg" alt="Okul Atölye">
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/okulatolye2.jpg" alt="Okul Atölye">
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/yatako2.jpg">
-  </div>
-  <p>Yatak Odası</p>
-</div>
+      <div class="project-category">
+        <h2 class="project-category__title">Okul Çalışma Alanı</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/okulc1.jpg" alt="Okul Çalışma Alanı">
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/yatako3.jpg">
-  </div>
-  <p>Yatak Odası</p>
-</div>
+      <div class="project-category">
+        <h2 class="project-category__title">Anaokulu</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card__image">
+              <img src="images/anaokul1.jpg" alt="Anaokulu">
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/yatako4.jpg">
-  </div>
-  <p>Yatak Odası</p>
-</div>
+    </div>
+  </main>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/yatako5.jpg">
-  </div>
-  <p>Yatak Odası</p>
-</div>
+  <footer class="footer">
+    <p>&copy; Lin Mimari</p>
+  </footer>
 
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/yatako6.jpg">
-  </div>
-  <p>Yatak Odası</p>
-</div>
-  
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/banyo1.jpg">
-  </div>
-  <p>Banyo</p>
-</div>
-    
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/banyo2.jpg">
-  </div>
-  <p>Banyo</p>
-</div>
-  
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/okulatolye1.jpg">
-  </div>
-  <p>Okul Atölye</p>
-</div>
-
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/okulatolye2.jpg">
-  </div>
-  <p>Okul Atölye</p>
-</div>
-
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/okulc1.jpg">
-  </div>
-  <p>Okul Çalışma Alanı</p>
-</div>
-
-<div class="project-item">
-  <div class="image-box">
-    <img src="images/anaokul1.jpg">
-  </div>
-  <p>Anaokulu</p>
-</div>
-
-</section>
-<footer>
-        <p>© Linmimari</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>

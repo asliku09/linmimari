@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lin Mimari</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lin Mimari</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-c.css">
 </head>
-
 <body>
 
-<header>
-    <img src="images/lin2.png" class="logo">
-
-    <nav>
-        <a href="index.html" class="active">Ana Sayfa</a>
-        <a href="projeler.html">Projeler</a>
-        <a href="hakkimda.html">Hakkımda</a>
-        <a href="iletisim.html">İletişim</a>
+  <header class="header">
+    <a href="index.html"><img src="images/lin22.png" alt="Lin Mimari" class="logo"></a>
+    <nav class="nav">
+      <a href="index.html" class="active">Ana Sayfa</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="hakkimda.html">Hakkımda</a>
+      <a href="iletisim.html">İletişim</a>
     </nav>
-</header>
+    <button class="hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-<section class="about">
-  <div class="about-container">
-    <div class="about-text">
+  <main>
 
-        <h1 class="section-title">Yalın, işlevsel ve zamansız mekânlar</h1>
+    <!-- A) CINEMATIC: Full-screen image + overlay text -->
+    <section class="hero-cine">
+      <img src="images/hero.jpg" alt="Lin Mimari" class="hero-cine__bg">
+      <div class="hero-cine__overlay"></div>
+      <div class="hero-cine__content">
+        <h1>Yalın, işlevsel ve zamansız mekânlar</h1>
+        <p>Konut ve ticari alanlar için mimari ve iç mekân tasarım hizmetleri sunuyoruz.</p>
+      </div>
+      <div class="hero-cine__scroll">
+        <svg width="20" height="32" viewBox="0 0 20 32" fill="none" stroke="#fff" stroke-width="1.5">
+          <rect x="1" y="1" width="18" height="30" rx="9"/>
+          <line x1="10" y1="8" x2="10" y2="14"/>
+        </svg>
+      </div>
+    </section>
 
-        <p>
-        Konut ve ticari alanlar için mimari ve iç mekân tasarım hizmetleri sunuyoruz.
-        </p>
+    <!-- Shared sections below -->
+    <section class="section ed-services-section">
+      <div class="ed-services">
+        <h2 class="ed-services__title">Hizmetler</h2>
+        <div class="ed-services__list">
+          <div class="ed-services__item"><span class="ed-services__num">01</span><h3>Mimari Tasarım ve Konsept Geliştirme</h3></div>
+          <div class="ed-services__item"><span class="ed-services__num">02</span><h3>İç Mekân Tasarımı</h3></div>
+          <div class="ed-services__item"><span class="ed-services__num">03</span><h3>Yerleşim Planı ve 3 Boyut Görselleştirme</h3></div>
+          <div class="ed-services__item"><span class="ed-services__num">04</span><h3>Elektrik ve Aydınlatma Projeleri</h3></div>
+          <div class="ed-services__item"><span class="ed-services__num">05</span><h3>Mobilya Tasarımı ve Üretim Detayları</h3></div>
+          <div class="ed-services__item"><span class="ed-services__num">06</span><h3>Uygulama ve Şantiye Yönetimi</h3></div>
+        </div>
+      </div>
+    </section>
 
-        <p>
-        Mimari ve iç mekân tasarımı alanında, yalın, işlevsel ve zamansız mekânlar oluşturmayı hedefliyoruz. 
-        Her projeyi, kullanıcı ihtiyaçları ve mekânın potansiyeli doğrultusunda ele alıyor; estetik ve işlevsellik dengesini gözeterek çözümler üretiyoruz. 
-        Tasarım sürecinden uygulama ve üretime kadar tüm aşamaları, disiplinli bir planlama ve ekip koordinasyonu ile yürütüyoruz.
-        </p>
+    <section class="section ed-process-section">
+      <h2 class="section__title">Süreç</h2>
+      <div class="section__inner">
+        <div class="timeline">
+          <div class="timeline-step"><div class="timeline-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16a1 1 0 011 1v9a1 1 0 01-1 1h-5l-3 3v-3H4a1 1 0 01-1-1V7a1 1 0 011-1z"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="13" x2="13" y2="13"/></svg></div><div class="timeline-body"><span class="timeline-num">01</span><h3>İlk Görüşme</h3><p>İhtiyaç ve beklentiler belirlenir</p></div></div>
+          <div class="timeline-step"><div class="timeline-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6"/><line x1="16" y1="16" x2="20" y2="20"/><line x1="9" y1="9" x2="9" y2="13"/><line x1="9" y1="13" x2="13" y2="13"/></svg></div><div class="timeline-body"><span class="timeline-num">02</span><h3>Keşif ve Ölçü</h3><p>Mekân detaylı şekilde analiz edilir</p></div></div>
+          <div class="timeline-step"><div class="timeline-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3l6 6L9 21H3v-6L15 3z"/><line x1="13" y1="5" x2="19" y2="11"/></svg></div><div class="timeline-body"><span class="timeline-num">03</span><h3>Konsept ve Tasarım</h3><p>Projenin genel dili oluşturulur</p></div></div>
+          <div class="timeline-step"><div class="timeline-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="14" y2="12"/><line x1="8" y1="16" x2="16" y2="16"/></svg></div><div class="timeline-body"><span class="timeline-num">04</span><h3>Projelendirme</h3><p>Teknik çizimler ve detaylar hazırlanır</p></div></div>
+          <div class="timeline-step"><div class="timeline-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-7 9 7v11"/><rect x="9" y="14" width="6" height="7"/></svg></div><div class="timeline-body"><span class="timeline-num">05</span><h3>Uygulama ve Üretim</h3><p>Proje hayata geçirilir</p></div></div>
+        </div>
+      </div>
+    </section>
 
-        <h2>Hizmetler</h2>
+    <div class="ed-divider"><img src="images/surec.png" alt="Süreç"></div>
 
-        <ul>
-            <li>Mimari tasarım ve konsept geliştirme</li>
-            <li>İç mekân tasarımı</li>
-            <li>Yerleşim planı ve 3 boyut görselleştirme</li>
-            <li>Elektrik ve aydınlatma projeleri</li>
-            <li>Mobilya tasarımı ve üretim detayları</li>
-            <li>Uygulama ve şantiye yönetimi</li>
-        </ul>
+    <section class="ed-cta"><a href="projeler.html" class="ed-cta__link">Tüm Projeleri Gör</a></section>
+  </main>
 
-        <h2>Süreç</h2>
-        
-        <img src="images/surec.png" class="content-image">
-
-        <p>
-        İlk görüşme ile ihtiyaç ve beklentiler belirlenir. Keşif ve ölçü aşamasında mekân detaylı şekilde analiz edilir. 
-        Konsept ve tasarım sürecinde projenin genel dili oluşturulur. Projelendirme aşamasında teknik çizimler ve detaylar hazırlanır. 
-        Tüm süreç netleştirildikten sonra uygulama ve üretim aşamasına geçilerek proje hayata geçirilir.
-        </p>
-
-    </div>
-  </div>
-</section>
-    
-<footer>
-    <p>&copy; Linmimari</p>
-</footer>
-
+  <footer class="footer"><p>&copy; Lin Mimari</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>

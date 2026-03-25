@@ -1,0 +1,575 @@
+/* ===========================================
+   EDITORIAL / MAGAZINE LAYOUT — Homepage C
+   Extends style.css (loaded first)
+   =========================================== */
+
+/* ===== HERO ===== */
+.ed-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 100px);
+}
+
+.ed-hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 72px;
+}
+
+.ed-hero__text h1 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+  animation: fadeUp 0.8s ease-out;
+}
+
+.ed-hero__desc {
+  animation: fadeUp 0.8s ease-out 0.15s both;
+}
+
+.ed-hero__desc p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.85;
+  max-width: 440px;
+}
+
+.ed-hero__desc p + p {
+  margin-top: 16px;
+}
+
+.ed-hero__image {
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.6s ease-out 0.1s both;
+}
+
+.ed-hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==============================================
+   A) CINEMATIC — Full-screen image + overlay
+   ============================================== */
+.hero-cine {
+  position: relative;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-cine__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-cine__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  z-index: 1;
+}
+
+.hero-cine__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  padding: 40px 24px;
+  animation: fadeUp 0.9s ease-out;
+}
+
+.hero-cine__content h1 {
+  font-size: 3.4rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+
+.hero-cine__content p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero-cine__scroll {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  opacity: 0.6;
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ==============================================
+   B) ASYMMETRIC — Narrow text / wide image
+   ============================================== */
+.hero-asym {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  min-height: calc(100vh - 100px);
+}
+
+.hero-asym__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px 48px;
+  animation: fadeUp 0.8s ease-out;
+}
+
+.hero-asym__text h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 28px;
+}
+
+.hero-asym__text p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.85;
+}
+
+.hero-asym__text p + p {
+  margin-top: 14px;
+}
+
+.hero-asym__image {
+  overflow: hidden;
+  animation: fadeUp 0.6s ease-out 0.1s both;
+}
+
+.hero-asym__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==============================================
+   C) TYPE-FIRST — Big title → line → split
+   ============================================== */
+.hero-type {
+  padding: 80px 48px 96px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.hero-type__title {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  animation: fadeUp 0.8s ease-out;
+}
+
+.hero-type__line {
+  width: 60px;
+  height: 1px;
+  background: #ccc;
+  margin: 48px auto;
+}
+
+.hero-type__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+  animation: fadeUp 0.8s ease-out 0.2s both;
+}
+
+.hero-type__desc p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.85;
+}
+
+.hero-type__desc p + p {
+  margin-top: 16px;
+}
+
+.hero-type__image {
+  overflow: hidden;
+}
+
+.hero-type__image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* ==============================================
+   D) STACKED — Title → image → description
+   ============================================== */
+.hero-stack {
+  text-align: center;
+}
+
+.hero-stack__title {
+  font-size: 3.8rem;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  padding: 80px 48px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeUp 0.8s ease-out;
+}
+
+.hero-stack__image {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  animation: fadeUp 0.7s ease-out 0.1s both;
+}
+
+.hero-stack__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-stack__desc {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 48px 48px 0;
+  animation: fadeUp 0.7s ease-out 0.2s both;
+}
+
+.hero-stack__desc p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.85;
+  text-align: left;
+}
+
+/* ===== SERVICES ===== */
+.ed-services {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ed-services__title {
+  font-size: 0.78rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #999;
+  margin-bottom: 40px;
+}
+
+.ed-services__list {
+  border-top: 1px solid #eee;
+}
+
+.ed-services__item {
+  display: flex;
+  align-items: baseline;
+  gap: 28px;
+  padding: 28px 0;
+  border-bottom: 1px solid #eee;
+  transition: padding-left 0.3s ease;
+}
+
+.ed-services__item:hover {
+  padding-left: 12px;
+}
+
+.ed-services__num {
+  font-size: 0.72rem;
+  color: #bbb;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  flex-shrink: 0;
+  width: 24px;
+}
+
+.ed-services__item h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+}
+
+/* ===== DIVIDER ===== */
+.ed-divider {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.ed-divider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== SECTION SPACING ===== */
+.ed-services-section {
+  padding-bottom: 32px;
+}
+
+.ed-process-section {
+  padding-top: 32px;
+}
+
+.ed-process-intro {
+  max-width: 600px;
+  margin: 0 auto 16px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* ===== CTA ===== */
+.ed-cta {
+  text-align: center;
+  padding: 72px 48px;
+  border-top: 1px solid #eee;
+}
+
+.ed-cta__link {
+  display: inline-block;
+  font-size: 0.88rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  padding: 18px 48px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.ed-cta__link:hover {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* ======================= */
+/* ===== RESPONSIVE ====== */
+/* ======================= */
+
+@media (max-width: 1024px) {
+  .ed-hero__text {
+    padding: 64px 48px;
+  }
+
+  .ed-hero__text h1 {
+    font-size: 2.8rem;
+  }
+
+  .ed-services__item h3 {
+    font-size: 1.1rem;
+  }
+
+  /* A */
+  .hero-cine__content h1 {
+    font-size: 2.8rem;
+  }
+
+  /* B */
+  .hero-asym__text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-asym__text {
+    padding: 48px 32px;
+  }
+
+  /* C */
+  .hero-type {
+    padding: 64px 32px 72px;
+  }
+
+  .hero-type__title {
+    font-size: 3.4rem;
+  }
+
+  .hero-type__image img {
+    height: 360px;
+  }
+
+  /* D */
+  .hero-stack__title {
+    font-size: 3rem;
+    padding: 64px 32px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ed-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .ed-hero__text {
+    padding: 40px 24px 32px;
+    order: 1;
+  }
+
+  .ed-hero__text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+  }
+
+  .ed-hero__desc p {
+    font-size: 0.95rem;
+  }
+
+  .ed-hero__image {
+    order: 2;
+    height: 50vh;
+    min-height: 280px;
+  }
+
+  /* A) Cinematic mobile */
+  .hero-cine {
+    min-height: 85vh;
+  }
+
+  .hero-cine__content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-cine__content p {
+    font-size: 0.95rem;
+  }
+
+  /* B) Asymmetric mobile → stacked */
+  .hero-asym {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-asym__text {
+    padding: 40px 24px 32px;
+  }
+
+  .hero-asym__text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-asym__image {
+    height: 50vh;
+    min-height: 260px;
+  }
+
+  /* C) Type-first mobile */
+  .hero-type {
+    padding: 40px 24px 56px;
+  }
+
+  .hero-type__title {
+    font-size: 2.2rem;
+  }
+
+  .hero-type__line {
+    margin: 28px auto;
+  }
+
+  .hero-type__split {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-type__image img {
+    height: 280px;
+  }
+
+  /* D) Stacked mobile */
+  .hero-stack__title {
+    font-size: 2.2rem;
+    padding: 40px 24px 32px;
+  }
+
+  .hero-stack__image {
+    height: 44vh;
+  }
+
+  .hero-stack__desc {
+    padding: 32px 24px 0;
+  }
+
+  .hero-stack__desc p {
+    font-size: 0.95rem;
+  }
+
+  /* Shared */
+  .ed-services {
+    padding: 0;
+  }
+
+  .ed-services__item {
+    padding: 22px 0;
+    gap: 16px;
+  }
+
+  .ed-services__item:hover {
+    padding-left: 0;
+  }
+
+  .ed-services__item h3 {
+    font-size: 1rem;
+  }
+
+  .ed-divider {
+    padding: 0;
+  }
+
+  .ed-process-intro {
+    font-size: 0.92rem;
+    padding: 0 8px;
+  }
+
+  .ed-cta {
+    padding: 48px 24px;
+  }
+
+  .ed-cta__link {
+    padding: 16px 36px;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ed-hero__text h1 { font-size: 1.8rem; }
+  .ed-hero__image { height: 36vh; }
+
+  .hero-cine__content h1 { font-size: 1.8rem; }
+  .hero-asym__text h1 { font-size: 1.65rem; }
+  .hero-type__title { font-size: 1.75rem; }
+  .hero-type__image img { height: 220px; }
+  .hero-stack__title { font-size: 1.75rem; }
+  .hero-stack__image { height: 36vh; }
+
+  .ed-services__item h3 { font-size: 0.92rem; }
+  .ed-divider { padding: 0; }
+}
